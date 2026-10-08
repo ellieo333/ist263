@@ -1,0 +1,28 @@
+h1{
+    color: blue;
+    font-size: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-size: 3em; /* 1em is the original size you make the number bigger or smaller depending on the size you want*/
+    font-family: Verdana, Geneva, Tahoma, serif ;
+    font-weight: bolder;
+    text-decoration:line-through; /*not working only line-through works*/
+}
+p, h2{
+    color: rgb(38, 132, 38);
+    /*group selector*/
+}
+p a{
+    color: rgb(194, 20, 49);
+    /* decendant selector*/
+    /*changing color of a tags inside of p tags*/
+}
+#welcome{
+    color:blueviolet;
+    text-decoration: none; 
+    /*id selector only styles 1 element per html page use # in css*/
+}
+.doublesize{
+    font-size: 2em;
+}
