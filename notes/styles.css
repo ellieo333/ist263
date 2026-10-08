@@ -19,9 +19,10 @@ p a{
     /*changing color of a tags inside of p tags*/
 }
 #welcome{
+    /*id selector only styles 1 element per html page use # in css*/
     color:blueviolet;
     text-decoration: none; 
-    /*id selector only styles 1 element per html page use # in css*/
+    
 }
 .doublesize{
     font-size: 2em;
