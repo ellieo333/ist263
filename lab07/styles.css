@@ -1,21 +1,21 @@
 body{
-    background-color: #FFC8BA;
+    background-color: red;
 }
 p{
-    color: #F67280;
+    color: blue;
 }
 a{
-    color: #A70267;
+    color: green;
 }
 h1{
-    color: #c10072;
+    color: orange;
 }
 nav{
-    background-color: #000067;
+    background-color: purple;
 }
 nav a{
-    color: #6C5B7B;
+    color: magenta;
 }
 nav a:hover{
-    background-color: #355C7D;
+    background-color: teal;
 }
