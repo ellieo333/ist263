@@ -16,3 +16,6 @@ nav{
 nav a{
     color: #6C5B7B;
 }
+nav a:hover{
+    background-color: #355C7D;
+}
