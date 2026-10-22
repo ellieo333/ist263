@@ -25,3 +25,6 @@ nav a:hover{
 .footer-right{
     float: right;
 }
+.clear{
+    clear: both;
+}
