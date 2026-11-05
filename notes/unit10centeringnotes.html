@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering</title>
+    <style>
+        p{
+            text-align: center; /* can be used for all inline elements*/
+        }
+        div{
+            width: 50%; /*half page*/
+            border: 1px solid mediumseagreen;
+            margin: 0px auto; /* 0= top and bottom auto = left and right*/
+            padding: 20px; /* adds space between text and border*/
+        }
+        section{
+            border: 2px dashed magenta;
+            display: flex;
+            justify-content: center;/*justify is where things layout left to right*/
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Centering</h1>
+
+        <h2>Text Centering</h2><!--for inline-->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus eius sequi amet non molestias adipisci aspernatur earum, nisi explicabo inventore praesentium accusamus, nam autem. Nostrum commodi officia esse sapiente sequi?</p>
+
+        <h2>Block Centering</h2><!--have to size width before centering-->
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, veritatis assumenda sapiente similique blanditiis in fugiat, recusandae labore incidunt tenetur voluptatum eveniet ab tempore suscipit illum officiis. Iusto, mollitia veniam.</div>
+
+        <h2>Flex-box Centering "hack"</h2> <!--dont have to size before-->
+            <section>
+                Hello World!
+            </section>
+
+</body>
+</html>

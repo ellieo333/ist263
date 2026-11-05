@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        h2{
+            border: 2px solid mediumvioletred;
+        }
+    </style>
+    <script>/*usually in the header or at the very bottom but can go anywhere loads faster if javascript is at the top*/
+        //alert('Hello World!'); - this makes a pop up alert when page loads
+        //events happen when the user does soemthing on the site (clicks, hovers, sumbitiing forms, etc) 
+        // on blur means going away from something)
+
+        function firstFunction(){
+            alert('Hello World!');// when using functions you must 'call' them to work
+        }
+        function clicky(){ //when user clicks a message pops up
+            alert('Thanks for Clicking');
+        }
+        function hovery(){ //event works when user hovers over the assigned thing
+            alert('Thanks for Hovering Over Me');
+        }
+    </script>
+</head>
+<body onload="firstFunction();"><!--onload can only be use in the body tag other events can go anywhere-->
+    
+    <h1>JavaScript Basics</h1>
+
+    <p onclick="clicky();">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias dolorem a exercitationem cupiditate est, ullam, delectus consequatur maxime quam odio ea temporibus, harum deserunt velit iure saepe impedit nisi quasi?</p>
+
+    <h2 onmouseover="hovery();">Hover text</h2>
+
+</body>
+</html>
