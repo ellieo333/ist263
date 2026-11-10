@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Picker</title>
+    <script>
+        function changeColor(){
+            document.getElementById("wholepage").style.backgroundColor = document.getElementById("picker").value;
+            /* changing the background color to the value of the picker*/
+        }
+    </script>
 </head>
-<body>
+<body id="wholepage">
     <form>
-        <input type="color">
+        <input onchange="changeColor();" id="picker" type="color">
     </form>
 </body>
 </html>
