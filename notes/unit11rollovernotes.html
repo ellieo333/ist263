@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rollover</title>
+    <script>
+        function change() {
+            document.getElementById("arrow").setAttribute("src", "https://laferger.github.io/ist263/images/arrow_over.PNG");
+        }
+        function changeBack() {
+            document.getElementById("arrow").setAttribute("src", "https://laferger.github.io/ist263/images/arrow.PNG");
+        }
+
+    </script>
 </head>
 <body>
-    <img src="https://laferger.github.io/ist263/images/arrow.PNG"> 
+    <img id="arrow" onmouseover="change();"  onmouseout="changeBack();" src="https://laferger.github.io/ist263/images/arrow.PNG"> 
 </body>
 </html>
