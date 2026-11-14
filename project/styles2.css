@@ -1,0 +1,174 @@
+
+
+body {
+  background-image: url("projectimages/background-paw.jpg");
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #000E54;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+h1, h2, h3 { 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    letter-spacing: .5px; 
+}
+h1 { 
+    font-size: 2.2em; 
+}
+h2 { 
+    font-size: 1.7em; 
+}
+h3 { 
+    font-size: 1.3em; 
+}
+p, li, a {
+    font-size: 1.1em; 
+}
+/* ---------- Layout ---------- */
+.row { 
+    display: flex; 
+    gap: 24px; 
+    align-items: flex-start; 
+}
+#left-side, #right-side { 
+    flex: 1; 
+}
+
+/* one shared card style */
+#about-me, #cat-traits, #my-cats, #in-common, .cat-card {
+  background: #fff;
+  border: 10px groove bisque;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px black;
+}
+
+/* cat cards sit INSIDE #my-cats, so they get a lighter style */
+.cat-card {
+  display: flow-root;           
+  background: #fffdf8;
+  border: 3px solid bisque;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+.cat-card:last-child {
+  margin-bottom: 0;
+}
+/*----Photos----*/
+#selfie { 
+    float: right; 
+    width: 200px; 
+    border: 2px solid bisque; 
+    border-radius: 50%; 
+    margin: 0 0 10px 20px; 
+}
+.about-cat-photo { 
+    float: left; 
+    width: 220px; 
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 12px; 
+    margin: 0 20px 10px 0; 
+}
+#cat-traits img {
+  display: block;
+  border-radius: 12px;
+  margin-top: 16px;
+}
+/* ---------- Navigation/Footer ---------- */
+nav, footer { 
+    background: #6f8fe7; 
+    padding: 10px; 
+    border-radius: 2em; 
+    display: flex; 
+    width: 100%;
+}
+nav{
+    margin-bottom: 30px;
+}
+nav a {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 1em;
+  font-weight: bold;
+}
+footer a { 
+    flex: 1; 
+    text-align: center; 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 8px; 
+    border-radius: 1em; 
+}
+nav a:hover, nav a.active { 
+    background: #6699ff; 
+}
+nav span, footer span { 
+    display: none; 
+}            
+footer div{
+    flex: 1; 
+    text-align: center; 
+}
+
+footer a:hover{
+    background: #6699ff;
+    text-decoration: underline;
+}
+.footer-nav-links a, .footer-contact a {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 12px;
+}
+.social-icons img {
+  width: 32px;
+}
+@media only screen and (max-width: 900px) {
+  .row { 
+        flex-direction: column; 
+        align-items: stretch;
+    }
+}
+@media only screen and (max-width: 600px){
+    
+    nav, footer {
+        flex-direction: column;
+        border-radius: 1.5em;
+    }
+    footer div + div {
+        margin-top: 16px;
+    }
+  .about-cat-photo, #selfie { 
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto 12px;
+    }
+    footer a{
+        width: 100%;
+        display: block;
+        padding: 5px;
+    }
+    span{
+        display: none;
+    }
+}

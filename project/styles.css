@@ -1,0 +1,100 @@
+body{
+    background-image: url("projectimages/background-paw.jpg");
+}
+h1, h2, h3{
+  font-family: fantasy;
+  font-size: 35px;  
+}
+
+p, li{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 25px;  
+}
+.row{
+    display: flex;
+}
+#left-side, #right-side{
+    flex: 1;
+}
+section div { /*left and right side*/
+    background: #f8f8f8;
+    margin: 10px;
+    padding: 20px;
+    color: #000E54;
+    flex: 1;
+    flex-wrap: wrap; /* this property must be on flexbox rows*/   
+}
+#selfie{
+    float:right;
+    margin: 0px 20px 10px 0px;
+}
+.about-cat-photo{
+    width: 250px;
+    float:left;
+    margin: 0px 20px 10px 0px;
+}
+.clear{
+    clear: both;
+}
+article, #left-side, #right-side, #in-common, #about-me, #cat-traits{
+    border-style: groove;
+    border-color:bisque;
+    border-width: 15px;
+    padding:40px;
+    margin-bottom: 30px;
+
+}
+nav{
+    background-color:#6f8fe7;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 2em;
+    display: flex;
+    width: 100%;
+}
+nav a{
+    color: #fffeff;
+    flex: 1;
+    text-align: center;
+}
+nav a:hover{
+    background-color: #6699ff;
+}
+@media only screen and (max-width: 600px){
+    nav a{
+        width: 100%;
+        display: block;
+        padding: 5px;
+    }
+    img{
+        width:100%;
+    }
+    .social-icons{
+        width:5%;
+    }
+}
+footer{
+    background-color:#6f8fe7;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 2em;
+    display: flex;
+    width: 100%;
+}
+footer a{
+    color: #fffeff;
+
+}
+footer div{
+    flex: 1;
+    text-align: center;
+}
+footer a:hover{
+    background-color: #6699ff;
+}
+#site-footer{
+    display: flex;
+}
+#site-footer div{
+    flex: 1;
+}
